@@ -1,78 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Retro Forum</title>
     <!-- Google fonts - Mulish -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Tailwind & DasiyUI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- css -->
-     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="navbar bg-base-100 w-[80%] mx-auto">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Item 1</a></li>
-                      <li>
-                        <a>Parent</a>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </li>
-                      <li><a>Item 3</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost text-2xl font-bold">ReTro</a>
-                </div>
-                <div class="navbar-end hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li class="mr-3"><a class="bg-[#12132D08] rounded-full p-4"><i class="fa-solid fa-house text-[#12132D99] "></i></a></li>
-                    <li class="mr-3">
-                        <a href="/" class="bg-[#12132D08] rounded-full p-4"><i class="fa-solid fa-pencil text-[#12132D99]"></i></a>
-                    </li>
-                    <li class="mr-3"><a class="bg-[#12132D08] rounded-full p-4"><i class="fa-regular fa-address-book text-[#12132D99]"></i></a></li>
-                    <li class="mr-3"><a class="bg-[#12132D08] rounded-full p-4"><i class="fa-regular fa-flag text-[#12132D99]"></i></a></li>
-                  </ul>
-                  <a class="btn bg-[#797DFC] rounded-3xl px-6 text-white">Sign in</a>
-                </div>
-               
+      <nav>
+        <div class="navbar bg-base-100 w-[80%] mx-auto">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
               </div>
-        </nav>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Item 1</a></li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-2xl font-bold">ReTro</a>
+          </div>
+          <div class="navbar-end hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li class="mr-3">
+                <a class="bg-[#12132D08] rounded-full p-4"
+                  ><i class="fa-solid fa-house text-[#12132D99]"></i
+                ></a>
+              </li>
+              <li class="mr-3">
+                <a href="/" class="bg-[#12132D08] rounded-full p-4"
+                  ><i class="fa-solid fa-pencil text-[#12132D99]"></i
+                ></a>
+              </li>
+              <li class="mr-3">
+                <a class="bg-[#12132D08] rounded-full p-4"
+                  ><i class="fa-regular fa-address-book text-[#12132D99]"></i
+                ></a>
+              </li>
+              <li class="mr-3">
+                <a class="bg-[#12132D08] rounded-full p-4"
+                  ><i class="fa-regular fa-flag text-[#12132D99]"></i
+                ></a>
+              </li>
+            </ul>
+            <a class="btn bg-[#797DFC] rounded-3xl px-6 text-white">Sign in</a>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main></main>
+    <main>
+      <!-- Banner -->
+      <section
+        class="h-[60vh] w-[80%] mx-auto bg-[url(images/bgbanner.png)] bg-no-repeat bg-bottom bg-[#12132D] text-white flex justify-between items-center px-16 rounded-2xl mt-8"
+      >
+        <div>
+          <h1 class="text-xl md:text-2xl lg:text-5xl">
+            Welcome to the <br> ReTro Forum
+          </h1>
+          <p class="my-4 text-[#FFFFFFCC]">Share your favorite opinion and win and wp forum coffee mug!</p>
+          <input
+            type="text"
+            placeholder="Search for anything"
+            class="input input-bordered input-md w-full max-w-xs rounded-full"
+          />
+        </div>
+        <div class="bg-white text-black p-6 h-[50%] w-[30%] rounded-xl flex flex-col items-center justify-center">
+            <ul class="flex justify-between mb-3 w-full">
+                <li>Registered Users</li>
+                <li>01</li>
+            </ul>
+            <ul class="flex justify-between mb-3 w-full">
+                <li>Forum</li>
+                <li>01</li>
+            </ul>
+            <ul class="flex justify-between mb-3 w-full">
+                <li>Topics</li>
+                <li>01</li>
+            </ul>
+            <ul class="flex justify-between w-full">
+                <li>Replies</li>
+                <li>01</li>
+            </ul>
+        </div>
+      </section>
+
+      <!-- Blogs -->
+       <section class="w-[80%] mx-auto">
+        <div>
+            <h3>Let's Discuss</h3>
+            <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+        </div>
+       </section>
+    </main>
     <footer></footer>
 
     <script src="scripts/index.js"></script>
-</body>
+  </body>
 </html>
