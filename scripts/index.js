@@ -24,7 +24,7 @@ const showBlogDetails = (blog) => {
         div.innerHTML = `
         <div class="card-body bg-[#F3F3F5] my-4 rounded-lg">
                         <div class="flex gap-2">
-                        <div class="avatar mr-4">
+                        <div class="avatar online mr-4">
                         <div class="w-16 rounded">
                             <img
                             src="${data?.image}"
@@ -51,11 +51,14 @@ const showBlogDetails = (blog) => {
                               <div class="stat-figure text-accent">${data?.posted_time} min</div>
                               <div class="stat-title">Read</div>
                             </div>
+                            <div class="self-center">
+                                <button id="show-title-btn" class="bg-[#10B981] rounded-full py-1 px-2 text-white"><i class="fa-regular fa-envelope""></i></button>
+                            </div>
                           </div>
                         </div>
                       </div>`
 
-                      cardContainer.appendChild(div)
+                      cardContainer.appendChild(div);
     })
 }
 
@@ -63,10 +66,9 @@ const showLatestPosts = (posts) => {
     const cardContainer = document.getElementById('latest-card-container');
 
     posts.forEach(post => {
-        console.log(post)
-
         const div = document.createElement('div');
         div.classList = 'card bg-base-100 w-90 shadow-xl';
+
         div.innerHTML = `
              <figure>
                       <img
@@ -74,7 +76,7 @@ const showLatestPosts = (posts) => {
                         alt="" />
                     </figure>
                     <div class="card-body">
-                        <h4 class="flex items-center gap-3 text-[#12132D99]"><i class="fa-regular fa-calendar"></i> ${post?.author?.posted_date}</h4>
+                        <h4 class="flex items-center gap-3 text-[#12132D99]"><i class="fa-regular fa-calendar"></i> ${post?.author?.posted_date || "No date found"} </h4>
                       <h2 class="card-title text-lg font-bold">${post?.title}</h2>
                       <p class="text-[#12132D99] text-sm">${post?.description}</p>
 
